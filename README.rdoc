@@ -36,6 +36,8 @@ for the EMServer, you will need EventMachine
   end
 
   @client.send( OSC::Message.new( "/greeting" , "hullo!" ))
+  # receive response from server:
+  # @client.recvfrom(512)
 
   sleep( 3 )
 

@@ -9,5 +9,9 @@ module OSC
     def send(mesg)
       @so.send(mesg.encode, 0)
     end
+
+    def recvfrom(*args)
+      @so.recvfrom(*args)&.first
+    end
   end
 end
